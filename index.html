@@ -36,6 +36,20 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        const apiKey = "c069de67917b962572dbf1eefb7fa64e";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&=&units=metric&q=berlin";
+        async function checkWeather() {
+            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            let data = await response.json();
+
+            console.log(data);
+        }
+
+        checkWeather();
+    </script>
 </body>
 
 </html>
