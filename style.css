@@ -101,9 +101,12 @@ body {
 }
 
 .error {
+    font-family: fantasy;
     text-align: left;
+    text-transform: uppercase;
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 10px;
     display: none;
+    color: #D04A8D;
 }
